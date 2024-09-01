@@ -168,3 +168,21 @@ input[type="text"], input[type="email"], footer textarea{
     border: none;
     
 }
+/* responsible media query */
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    .skills-container, .resume-container, footer, .about-items {
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    input[type="text"], input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+}
